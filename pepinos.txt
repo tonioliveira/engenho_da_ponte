@@ -1,0 +1,6 @@
+Pepinos:
+- ícones que não aparecem
+- retirar a sessão de fotos membros
+- incluir sessão videos
+- atualizar fotos
+- revisão textos (versão inglês)
