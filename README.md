@@ -4,6 +4,6 @@ Laboratório de Codificação Criativa<br>
 Coord. Prof. Toni Oliveira<br>
 Equipe:<br>
 Wenna Magna<br>
-Jaciene<br>
+Jaciene de Araújo<br>
 Luís Gabriel<br>
 CECULT - UFRB<br>
