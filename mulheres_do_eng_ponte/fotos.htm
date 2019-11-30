@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="files/bootstrap.css">
+  <link href="files/css_002.css" rel="stylesheet" type="text/css">
+  <link href="files/css.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="files/style.css">
+  <!--
+    <link rel="stylesheet" href="files/bootstrap.min.css">
+  -->
+  <link rel="stylesheet" href="files/baguetteBox.min.css">
+  <script src="files/baguetteBox.min.js"></script>
+  <script src="files/jquery.js"></script>
+  <script src="files/bootstrap.js"></script>
+
+  <title>Mulheres do Engenho da Ponte</title>
+</head>
+
+<body id="myFotos" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.htm">Logo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class=""><a href="index.htm#myPage">INICIO</a></li>
+          <li class=""><a href="index.htm#sobre_ini">SOBRE</a></li>
+          <li class=""><a href="index.htm#tour">AGENDA</a></li>
+          <li class=""><a href="index.htm#contact">CONTATO</a></li>
+          <li class=""><a href="index.htm#mapa">MAPA</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">MAIS
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="active"><a href="#">Fotos</a></li>
+              <li><a href="videos.htm">Videos</a></li>
+              <li><a href="#">Parcerias</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="tz-gallery">
+
+      <div class="row">
+
+        <div class="col-sm-6 col-md-4">
+          <a class="thumbnail" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg">
+            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg" alt="Bridge">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <a class="thumbnail" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/park.jpg">
+            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/park.jpg" alt="Park">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <a class="thumbnail" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg">
+            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg" alt="Tunnel">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <a class="thumbnail" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/traffic.jpg">
+            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/traffic.jpg" alt="Traffic">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <a class="thumbnail" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/rails.jpg">
+            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/rails.jpg" alt="Coast">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <a class="thumbnail" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/coast.jpg">
+            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/coast.jpg" alt="Rails">
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <script>
+    baguetteBox.run('.tz-gallery');
+  </script>
+  <!-- Footer -->
+  <footer class="text-center">
+    <a class="arrow-up" href="#myMedia" data-toggle="tooltip" title="" data-original-title="Home">
+      <span class="glyphicon glyphicon-arrow-up"></span>
+    </a><br><br>
+    <p>Laboratório de Codificação Criativa - CECULT - UFRB</p>
+    <p><a href="https://ufrb.edu.br/cecult/" data-toggle="tooltip" title="" data-original-title="Visite CECULT/UFRB">https://ufrb.edu.br/cecult/</a></p>
+  </footer>
+
+  <script>
+  $(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar .prevent, footer a[href='#myPage']").on('click', function(event) {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    });
+  })
+  </script>
+
+</body>
+
+</html>

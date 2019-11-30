@@ -1,6 +1,10 @@
 Pepinos:
 - ícones que não aparecem
-- retirar a sessão de fotos membros
-- incluir sessão videos
-- atualizar fotos
+- retirar a sessão de fotos membros (ok)
+- incluir sessão videos (em andamento)
+- incluir sessão de fotos (em andamento)
+- atualizar fotos (em andamento)
 - revisão textos (versão inglês)
+- créditos (fotos, videos, equip de trabalho)
+- fotos do carrossel estão em tamanhos diferentes
+- mapa (ok)

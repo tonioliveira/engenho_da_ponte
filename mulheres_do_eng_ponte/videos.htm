@@ -1,0 +1,149 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="files/bootstrap.css">
+  <link href="files/css_002.css" rel="stylesheet" type="text/css">
+  <link href="files/css.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="files/style.css">
+  <!--
+    <link rel="stylesheet" href="files/bootstrap.min.css">
+  -->
+  <link rel="stylesheet" href="files/baguetteBox.min.css">
+  <script src="files/baguetteBox.min.js"></script>
+  <script src="files/jquery.js"></script>
+  <script src="files/bootstrap.js"></script>
+
+  <title>Mulheres do Engenho da Ponte</title>
+</head>
+
+<body id="myVideos" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.htm">Logo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class=""><a href="index.htm#myPage">INICIO</a></li>
+          <li class=""><a href="index.htm#sobre_ini">SOBRE</a></li>
+          <li class=""><a href="index.htm#tour">AGENDA</a></li>
+          <li class=""><a href="index.htm#contact">CONTATO</a></li>
+          <li class=""><a href="index.htm#mapa">MAPA</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">MAIS
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="fotos.htm">Fotos</a></li>
+              <li class="active"><a href="#">Videos</a></li>
+              <li><a href="#">Parcerias</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="tz-gallery">
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- video -->
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-body mb-0 p-0">
+              <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3PDXmYoF5U" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a><img class="col-sm-6 col-md-4" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt="video" data-toggle="modal" data-target="#modal1"></a>
+
+        <!-- video -->
+        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-body mb-0 p-0">
+              <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a><img class="col-sm-6 col-md-4" src="https://mdbootstrap.com/img/screens/yt/screen-video-2.jpg" alt="video" data-toggle="modal" data-target="#modal2"></a>
+
+        <!-- video -->
+        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-body mb-0 p-0">
+              <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a><img class="col-sm-6 col-md-4" src="https://mdbootstrap.com/img/screens/yt/screen-video-3.jpg" alt="video" data-toggle="modal" data-target="#modal3"></a>
+      </div>
+      <!-- Grid row -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <a class="arrow-up" href="#myMedia" data-toggle="tooltip" title="" data-original-title="Home">
+      <span class="glyphicon glyphicon-arrow-up"></span>
+    </a><br><br>
+    <p>Laboratório de Codificação Criativa - CECULT - UFRB</p>
+    <p><a href="https://ufrb.edu.br/cecult/" data-toggle="tooltip" title="" data-original-title="Visite CECULT/UFRB">https://ufrb.edu.br/cecult/</a></p>
+  </footer>
+  <script>
+    $(document).ready(function() {
+      // Initialize Tooltip
+      $('[data-toggle="tooltip"]').tooltip();
+
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar .prevent, footer a[href='#myPage']").on('click', function(event) {
+
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function() {
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      });
+      //stop video after close modal
+      $('.modal').each(function(){
+            var src = $(this).find('iframe').attr('src');
+
+        $(this).on('click', function(){
+
+            $(this).find('iframe').attr('src', '');
+            $(this).find('iframe').attr('src', src);
+
+        });
+    });
+
+    })
+  </script>
+
+</body>
+
+</html>
