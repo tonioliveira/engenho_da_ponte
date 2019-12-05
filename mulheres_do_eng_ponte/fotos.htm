@@ -15,7 +15,7 @@
   <script src="files/jquery.js"></script>
   <script src="files/bootstrap.js"></script>
 
-  <title>Mulheres do Engenho da Ponte</title>
+  <title>Mulheres do Engenho: Fotos</title>
 </head>
 
 <body id="myFotos" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -28,7 +28,6 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.htm">Logo</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
@@ -46,7 +45,6 @@
               <li><a href="#">Parcerias</a></li>
             </ul>
           </li>
-          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
         </ul>
       </div>
     </div>
@@ -59,33 +57,38 @@
       <div class="row">
 
         <div class="col-sm-6 col-md-4">
-          <a class="thumbnail" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg">
-            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg" alt="Bridge">
+          <a class="thumbnail" href="files/media/fotos/004.jpg">
+            <img src="files/media/fotos/004.jpg" alt="Bridge">
           </a>
         </div>
         <div class="col-sm-6 col-md-4">
-          <a class="thumbnail" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/park.jpg">
-            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/park.jpg" alt="Park">
+          <a class="thumbnail" href="files/media/fotos/005.jpg">
+            <img src="files/media/fotos/005.jpg" alt="Park">
           </a>
         </div>
         <div class="col-sm-6 col-md-4">
-          <a class="thumbnail" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg">
-            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg" alt="Tunnel">
+          <a class="thumbnail" href="files/media/fotos/006.jpg">
+            <img src="files/media/fotos/006.jpg" alt="Tunnel">
           </a>
         </div>
         <div class="col-sm-6 col-md-4">
-          <a class="thumbnail" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/traffic.jpg">
-            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/traffic.jpg" alt="Traffic">
+          <a class="thumbnail" href="files/media/fotos/007.jpg">
+            <img src="files/media/fotos/007.jpg" alt="Traffic">
           </a>
         </div>
         <div class="col-sm-6 col-md-4">
-          <a class="thumbnail" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/rails.jpg">
-            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/rails.jpg" alt="Coast">
+          <a class="thumbnail" href="files/media/fotos/008.jpg">
+            <img src="files/media/fotos/008.jpg" alt="Coast">
           </a>
         </div>
         <div class="col-sm-6 col-md-4">
-          <a class="thumbnail" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/coast.jpg">
-            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/coast.jpg" alt="Rails">
+          <a class="thumbnail" href="files/media/fotos/009.jpg">
+            <img src="files/media/fotos/009.jpg" alt="Rails">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <a class="thumbnail" href="files/media/fotos/010.jpg">
+            <img src="files/media/fotos/010.jpg" alt="Rails">
           </a>
         </div>
 
@@ -112,7 +115,7 @@
     $('[data-toggle="tooltip"]').tooltip();
 
     // Add smooth scrolling to all links in navbar + footer link
-    $(".navbar .prevent, footer a[href='#myPage']").on('click', function(event) {
+    $(".navbar a[href^='#'], footer a[href='#myPage']").on('click', function(event) {
 
       // Prevent default anchor click behavior
       event.preventDefault();

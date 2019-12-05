@@ -21,7 +21,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <!--
       <a class="navbar-brand" href="#myPage">Logo</a>
+    -->
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -34,12 +36,11 @@
           <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">MAIS
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/fotos.htm">Fotos</a></li>
-            <li><a href="/videos.htm">Videos</a></li>
+            <li><a href="fotos.htm">Fotos</a></li>
+            <li><a href="videos.htm">Videos</a></li>
             <li><a href="#">Parcerias</a></li>
           </ul>
         </li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
     </div>
   </div>
@@ -56,26 +57,32 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="files/_MG_0184.JPG" alt="_MG_0184" width="1200" height="700">
+        <img src="files/media/fotos/001.jpg" alt="_MG_0184" width="1200" height="700">
         <div class="carousel-caption">
+          <!--
           <h3>Foto 1</h3>
           <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+        -->
         </div>
       </div>
 
       <div class="item">
-        <img src="files/dulce-16.jpg" alt="dulce-16" width="1200" height="700">
+        <img src="files/media/fotos/002.jpg" alt="dulce-16" width="1200" height="700">
         <div class="carousel-caption">
+          <!--
           <h3>Foto 2</h3>
-          <p>xxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+        -->
         </div>
       </div>
 
       <div class="item">
-        <img src="files/dulce-6.jpg" alt="dulce-6" width="1200" height="700">
+        <img src="files/media/fotos/003.jpg" alt="dulce-6" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>Foto 3</h3>
-          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <!--
+          <h3>Foto 1</h3>
+          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+        -->
         </div>
       </div>
     </div>
@@ -251,7 +258,7 @@ $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 
   // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar .prevent, footer a[href='#myPage']").on('click', function(event) {
+  $(".navbar a[href^='#'], footer a[href='#myPage']").on('click', function(event) {
 
     // Prevent default anchor click behavior
     event.preventDefault();
