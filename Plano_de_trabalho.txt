@@ -1,0 +1,11 @@
+#Atualizações e adições a serem feitas durante o trabalho
+
+#As edições não serão feitas necessariamente nesta ordem, é apenas para uma melhor organização do que será feito
+
+
+Primeira Semana: Adicionar agendamento de visitas, noticias de eventos; Adicionar informações e contatos; adicionar lista de produtos.
+
+Segunda Semana: Editar descrição, add logo, mudar foto de capa (sugestão de Mara, colocar imagem de todas elas)
+
+
+Terceira Semana: Criar aba "Parcerias" (sugestão de Kelly); Criar aba "Registros Audiovisuais" (sugestão de Ana), Encontrar galeria para videos e fotos; Add credito às fotos.
