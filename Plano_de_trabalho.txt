@@ -9,3 +9,25 @@ Segunda Semana: Editar descrição, add logo, mudar foto de capa (sugestão de M
 
 
 Terceira Semana: Criar aba "Parcerias" (sugestão de Kelly); Criar aba "Registros Audiovisuais" (sugestão de Ana), Encontrar galeria para videos e fotos; Add credito às fotos.
+
+
+----------------------
+
+11/08/2020
+
+Site
+
+-Retirar o "from the blog" #Feito#
+-Comentar codigo do "contato" (deixar suspenso).#Feito,porém o mapa parece ter desalinhado# Depois programar o servidor  para receber os formularios
+-Mudar mensagem da aba "agenda" #feito#
+-Falar com Mara sobre os textos para o site. #feito#
+-Tentar resolver a visualização do celular (fazer com professor)
+
+Quitanda
+
+-Perguntar a Mara sobre os valores dos produtos (se vai para o site ou não)
+-Decidir sobre as opções do menu da quitanda 
+-Cor de fundo #feito#
+-Mudar foto inicial (para mim aparece a foto que escolhi a "002") 
+-Textos para a quitanda
+-Inserir todas as sessões na pagina principal (com o professor)
